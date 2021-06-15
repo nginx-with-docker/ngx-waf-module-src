@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configuration Guide | ngx_waf</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="A web application firewall module for nginx without complex configuration.'">
+    
+    <link rel="preload" href="/ngx_waf/assets/css/0.styles.50317297.css" as="style"><link rel="preload" href="/ngx_waf/assets/js/app.85eb24b3.js" as="script"><link rel="preload" href="/ngx_waf/assets/js/2.eb25f57f.js" as="script"><link rel="preload" href="/ngx_waf/assets/js/16.ef824661.js" as="script"><link rel="prefetch" href="/ngx_waf/assets/js/10.6c43d4db.js"><link rel="prefetch" href="/ngx_waf/assets/js/11.adb805e5.js"><link rel="prefetch" href="/ngx_waf/assets/js/12.c1a5cf21.js"><link rel="prefetch" href="/ngx_waf/assets/js/13.77b83033.js"><link rel="prefetch" href="/ngx_waf/assets/js/14.0f885992.js"><link rel="prefetch" href="/ngx_waf/assets/js/15.3d87812c.js"><link rel="prefetch" href="/ngx_waf/assets/js/17.b0e6891f.js"><link rel="prefetch" href="/ngx_waf/assets/js/18.acef0db5.js"><link rel="prefetch" href="/ngx_waf/assets/js/19.49f18637.js"><link rel="prefetch" href="/ngx_waf/assets/js/20.289a2d7b.js"><link rel="prefetch" href="/ngx_waf/assets/js/21.9e12a8b6.js"><link rel="prefetch" href="/ngx_waf/assets/js/22.7a454a14.js"><link rel="prefetch" href="/ngx_waf/assets/js/23.99d8ff57.js"><link rel="prefetch" href="/ngx_waf/assets/js/24.93976249.js"><link rel="prefetch" href="/ngx_waf/assets/js/25.218a5afb.js"><link rel="prefetch" href="/ngx_waf/assets/js/26.ab657cbc.js"><link rel="prefetch" href="/ngx_waf/assets/js/27.c534a2f3.js"><link rel="prefetch" href="/ngx_waf/assets/js/28.25a127ef.js"><link rel="prefetch" href="/ngx_waf/assets/js/29.16ac2f86.js"><link rel="prefetch" href="/ngx_waf/assets/js/3.91d830cd.js"><link rel="prefetch" href="/ngx_waf/assets/js/30.17d1f556.js"><link rel="prefetch" href="/ngx_waf/assets/js/31.2208426a.js"><link rel="prefetch" href="/ngx_waf/assets/js/32.86ae5339.js"><link rel="prefetch" href="/ngx_waf/assets/js/33.82942a65.js"><link rel="prefetch" href="/ngx_waf/assets/js/34.670b7d56.js"><link rel="prefetch" href="/ngx_waf/assets/js/35.10c1d185.js"><link rel="prefetch" href="/ngx_waf/assets/js/36.d02611ca.js"><link rel="prefetch" href="/ngx_waf/assets/js/37.37793c51.js"><link rel="prefetch" href="/ngx_waf/assets/js/38.9a13061c.js"><link rel="prefetch" href="/ngx_waf/assets/js/39.ee40b227.js"><link rel="prefetch" href="/ngx_waf/assets/js/4.ec1e089c.js"><link rel="prefetch" href="/ngx_waf/assets/js/40.d357aae9.js"><link rel="prefetch" href="/ngx_waf/assets/js/5.599c80f5.js"><link rel="prefetch" href="/ngx_waf/assets/js/6.c04646c9.js"><link rel="prefetch" href="/ngx_waf/assets/js/7.85822b87.js"><link rel="prefetch" href="/ngx_waf/assets/js/8.c49fe268.js"><link rel="prefetch" href="/ngx_waf/assets/js/9.7e407dd0.js">
+    <link rel="stylesheet" href="/ngx_waf/assets/css/0.styles.50317297.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ngx_waf/" class="home-link router-link-active"><!----> <span class="site-name">ngx_waf</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ngx_waf/guide/configuration.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/ngx_waf/zh-cn/guide/configuration.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/ADD-SP/ngx_waf/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ngx_waf/guide/configuration.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/ngx_waf/zh-cn/guide/configuration.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/ADD-SP/ngx_waf/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/ngx_waf/guide/overview.html" class="sidebar-heading clickable open"><span>Quick Start</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ngx_waf/guide/overview.html" class="sidebar-link">Overview</a></li><li><a href="/ngx_waf/guide/version.html" class="sidebar-link">Version Description</a></li><li><a href="/ngx_waf/guide/compatibility.html" class="sidebar-link">Compatibility Statement</a></li><li><a href="/ngx_waf/guide/installation.html" class="sidebar-link">Installation Guide</a></li><li><a href="/ngx_waf/guide/configuration.html" aria-current="page" class="active sidebar-link">Configuration Guide</a></li><li><a href="/ngx_waf/guide/test.html" class="sidebar-link">Test</a></li><li><a href="/ngx_waf/guide/faq.html" class="sidebar-link">FAQ</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/ngx_waf/advance/directive.html" class="sidebar-heading clickable"><span>Advanced Guide</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/ngx_waf/todo/overview.html" class="sidebar-heading clickable"><span>TODO (Advice Needed)</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="configuration-guide"><a href="#configuration-guide" class="header-anchor">#</a> Configuration Guide</h1> <p>You can enable ngx_waf by adding configuration to a <code>server</code> block inside <code>nginx.conf</code>.
+Here is an example.</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>The configurations listed below are required if you intend to change them unless you know what it means.</p></div> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token keyword">http</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token keyword">server</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+        <span class="token comment"># on means enabled, off means disabled.</span>
+        waf on<span class="token punctuation">;</span>
+
+        <span class="token comment"># The absolute path to the directory where the rule file is located, must end with /.</span>
+        waf_rule_path <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>src<span class="token operator">/</span>ngx_waf<span class="token operator">/</span>assets<span class="token operator">/</span>rules<span class="token operator">/</span><span class="token punctuation">;</span>
+
+        <span class="token comment"># Firewall working mode, STD indicates standard mode.</span>
+        waf_mode STD<span class="token punctuation">;</span>
+
+        <span class="token comment"># CC defense parameter, 1000 requests per minute limit, </span>
+        <span class="token comment"># block the corresponding ip for 60 minutes after exceeding the limit.</span>
+        waf_cc_deny rate<span class="token operator">=</span><span class="token number">1000</span>r<span class="token operator">/</span>m duration<span class="token operator">=</span><span class="token number">60</span>m<span class="token punctuation">;</span>
+
+        <span class="token comment"># Cache detection results for up to 50 detection targets, </span>
+        <span class="token comment"># effective for all detections </span>
+        <span class="token comment"># except IP black and white list detection, CC protection and POST detection.</span>
+        waf_cache capacity<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">;</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ADD-SP/ngx_waf/edit/master/docs/guide/configuration.md" target="_blank" rel="noopener noreferrer">Help us improve this page!</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/15/2021, 8:15:39 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ngx_waf/guide/installation.html" class="prev">
+        Installation Guide
+      </a></span> <span class="next"><a href="/ngx_waf/guide/test.html">
+        Test
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ngx_waf/assets/js/app.85eb24b3.js" defer></script><script src="/ngx_waf/assets/js/2.eb25f57f.js" defer></script><script src="/ngx_waf/assets/js/16.ef824661.js" defer></script>
+  </body>
+</html>
